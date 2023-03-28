@@ -5,6 +5,7 @@ import "./Main.css";
 
 import Form from "./Form";
 import Tarefas from "./Tarefas";
+import Footer from './Footer';
 
 export default class Main extends Component {
   constructor(props) {
@@ -104,6 +105,7 @@ export default class Main extends Component {
           handleEdit={this.handleEdit}
           handleDelete={this.handleDelete}
         />
+        <Footer />
       </div>
     )
   }
