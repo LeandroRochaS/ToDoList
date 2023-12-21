@@ -1,4 +1,3 @@
-
 .form {
   display: flex;
   align-items: center;
@@ -6,26 +5,24 @@
 }
 
 .form input[type="text"] {
-  padding: 13px;
+  padding: 10px;
   border-radius: 10px;
   border: 0.1rem solid rgba(153, 74, 45, 0.5);
-  font-size: 20px;
+  font-size: 1.2rem;
   margin-left: 30px;
   transition: all 600ms;
-
+  font-weight: 500;
 }
 
-.form input[type="text"]:hover{
-  padding: 14px;
+.form input[type="text"]:hover {
+  transform: scale(1.03);
   transition: all 600ms;
-  background-color:  rgba(153, 74, 45, 0.1);
+  background-color: rgba(153, 74, 45, 0.1);
 }
 
-button{
+button {
   background: transparent;
   border: none;
   padding-left: 10px;
+  cursor: pointer;
 }
-
-
-

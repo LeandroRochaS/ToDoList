@@ -5,13 +5,13 @@ import "./Main.css";
 
 import Form from "./Form";
 import Tarefas from "./Tarefas";
-import Footer from './Footer';
+import Footer from "./Footer";
 
 export default class Main extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      novaTarefa: "Lista de Tarefas",
+      novaTarefa: "Tarefa",
       tarefas: [],
       index: -1,
     };
@@ -93,20 +93,22 @@ export default class Main extends Component {
     const { novaTarefa, tarefas } = this.state;
 
     return (
-      <div className="main">
-        <h1>Lista de Tarefas</h1>
-        <Form
-          handleSubmit={this.handleSubmit}
-          handleChange={this.handleChange}
-          novaTarefa={novaTarefa}
-        />
-        <Tarefas
-          tarefas={tarefas}
-          handleEdit={this.handleEdit}
-          handleDelete={this.handleDelete}
-        />
-        <Footer />
-      </div>
-    )
+      <>
+        <div className="main">
+          <h1>Lista de Tarefas</h1>
+          <Form
+            handleSubmit={this.handleSubmit}
+            handleChange={this.handleChange}
+            novaTarefa={novaTarefa}
+          />
+          <Tarefas
+            tarefas={tarefas}
+            handleEdit={this.handleEdit}
+            handleDelete={this.handleDelete}
+          />
+          <Footer />
+        </div>
+      </>
+    );
   }
 }
