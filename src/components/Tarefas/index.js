@@ -1,5 +1,5 @@
 import React from "react";
-import { FaEdit, FaWindowClose } from "react-icons/fa";
+import { FaEdit, FaTrash } from "react-icons/fa";
 import "./Tarefas.css";
 import PropTypes from "prop-types";
 
@@ -15,7 +15,7 @@ export default function Tarefas({ tarefas, handleEdit, handleDelete }) {
               onClick={(e) => handleEdit(e, index)}
               className="edit"
             />
-            <FaWindowClose
+            <FaTrash
               size={20}
               onClick={(e) => handleDelete(e, index)}
               className="delete"
